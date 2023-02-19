@@ -888,7 +888,7 @@ menu5_vehicles_spawn:On('Select', function(_)
     menu12:ClearItems()
     for k, v in pairs(vehicles) do
         menu12:AddButton({
-            label = k,
+            label = QBCore.Shared.FirstToUpper(k),
             value = v,
             description = Lang:t("menu.category_name"),
             select = function(btn)
